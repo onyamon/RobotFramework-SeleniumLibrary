@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-09-19T14:06:28.731817" rpa="false" schemaversion="5">
+<suite id="s1" name="Full Flow Test" source="C:\Users\NK 2316\robot-lab\tests\full_flow_test.robot">
+<test id="s1-t1" name="Open Browser To Register Page" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-19T14:06:29.546215" level="INFO">Opening browser 'chrome' to base url 'https://robot-lab-five.vercel.app/'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-19T14:06:29.545044" elapsed="4.267736"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-19T14:06:33.834650" elapsed="0.306737"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(@class,'nav-btn-register')]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-19T14:06:34.141931" elapsed="0.813906"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-19T14:06:34.956536" level="INFO">Clicking element 'xpath=//button[contains(@class,'nav-btn-register')]'.</msg>
+<arg>xpath=//button[contains(@class,'nav-btn-register')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-19T14:06:34.956239" elapsed="0.144413"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-19T14:06:41.101898" level="INFO">Slept 6 seconds.</msg>
+<arg>6s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-19T14:06:35.101143" elapsed="6.001085"/>
+</kw>
+<status status="PASS" start="2025-09-19T14:06:29.543967" elapsed="11.558911"/>
+</test>
+<status status="PASS" start="2025-09-19T14:06:28.734903" elapsed="12.370145"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Full Flow Test" id="s1" pass="1" fail="0" skip="0">Full Flow Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
